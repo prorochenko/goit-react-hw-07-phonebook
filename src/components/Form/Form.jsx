@@ -5,7 +5,8 @@ import Button from '../Button/Button';
 import Notiflix from 'notiflix';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { addContact, getContacts } from 'redux/contactsSlice';
+import { getContacts } from 'redux/contactsSlice';
+import { addContact } from 'redux/operations.js';
 
 export default function Form({ onSubmit }) {
   const contacts = useSelector(getContacts);

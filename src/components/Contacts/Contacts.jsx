@@ -3,8 +3,10 @@ import PropTypes from 'prop-types';
 import css from './Contacts.module.scss';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteContact, getContacts } from 'redux/contactsSlice';
+import { getContacts } from 'redux/contactsSlice';
 import { getFilter } from 'redux/filterSlice';
+import { fetchContacts, deleteContact } from 'redux/operations.js';
+import { useEffect } from 'react';
 
 const Contacts = () => {
   const contacts = useSelector(getContacts);
@@ -19,6 +21,9 @@ const Contacts = () => {
     return contact.name.toLocaleLowerCase().includes(filterValue);
   });
 
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, [dispatch]);
   return (
     <ul className={css.list}>
       {filterContacts.length === 0 ? (
