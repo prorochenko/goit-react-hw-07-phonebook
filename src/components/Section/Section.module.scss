@@ -1,0 +1,32 @@
+@import '../../Styles/shared.scss';
+
+.box {
+  outline: 1px solid #f9a826;
+  padding: 44px 28px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  @include mq(mob-only) {
+    width: 290px;
+  }
+
+  @include mq(tab) {
+    width: 330px;
+  }
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25;
+  @include mq(mob-only) {
+    font-size: 35px;
+  }
+
+  @include mq(tab) {
+    font-size: 48px;
+  }
+}

@@ -1,0 +1,14 @@
+.input {
+  width: 200px;
+
+  border: none;
+  border-bottom: 1px solid #adadad;
+  padding: 0 0 5px 0;
+}
+
+.input::placeholder {
+  color: #adadad;
+}
+.input:focus {
+  outline: none;
+}

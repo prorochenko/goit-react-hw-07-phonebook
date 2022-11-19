@@ -1,0 +1,20 @@
+@import '../../Styles/shared.scss';
+
+.title {
+  color: #000000;
+
+  margin: 0;
+  padding: 0 0 20px 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  font-family: 'Quicksand';
+  @include mq(mob-only) {
+    font-size: 18px;
+  }
+
+  @include mq(tab) {
+    font-size: 18px;
+  }
+}

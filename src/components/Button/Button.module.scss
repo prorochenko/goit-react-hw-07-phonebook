@@ -1,0 +1,30 @@
+@import '../../Styles/shared.scss';
+
+.btn {
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #f9a826;
+  cursor: pointer;
+  font-family: 'Quicksand';
+  border: 0;
+
+  font-size: 18px;
+  width: 319px;
+  height: 50px;
+  @include mq(mob-only) {
+    width: 219px;
+    height: 50px;
+  }
+
+  @include mq(tab) {
+    width: 319px;
+    height: 50px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  padding: 25px 0;
+}
