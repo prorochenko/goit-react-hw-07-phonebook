@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import css from './Contacts.module.scss';
 
 import { useDispatch, useSelector } from 'react-redux';
