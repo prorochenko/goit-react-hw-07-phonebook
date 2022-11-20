@@ -30,11 +30,11 @@ const Contacts = () => {
           <p className={css.list__text}>Phonebook is empty.</p>
         </div>
       ) : (
-        filterContacts.map(({ id, name, number }) => (
+        filterContacts.map(({ id, name, phone }) => (
           <li key={id} className={css.list__item}>
             <div className={css.list__box}>
               <p className={css.list__text}>
-                {name}: {number}
+                {name}: {phone}
               </p>
               <button
                 className={css.list__btn}
